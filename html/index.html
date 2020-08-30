@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Boston Outdoor Film Festival</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+
+    <!-- Bootstrap, Bootflat, and our own styles -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootflat/css/bootflat.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Open Font from Google used by Bootflat -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+    <!-- Font Awesome for icons not included in Bootflat-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- BANNER -->
+    <div class="jumbotron" id="banner-container">
+
+        <div class="banner">
+
+            <div class="banner-overlay"></div>
+
+            <div class="banner-background">
+
+                <img id="banner1" src="assets/img/banner-4.jpg" />
+
+            </div>
+
+            <div class="banner-text-container">
+
+                <div class="banner-text">
+
+                    <h4 class="">Come join us at the</h4>
+                    <h1 class="">Boston Public Garden</h1>
+                    <h4 class="">August 5th through 8th</h4>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- SOME LINKS -->
+    <div class="container text-right" id="some-links">
+        <ul class="list-inline list-unstyled some-links">
+            <li><a class="btn btn-default btn-twitter" title="Link to our Twitter account" target="_blank" href="//twitter.com"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="btn btn-default btn-facebook" title="Link to our Facebook page" target="_blank" href="//facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="btn btn-default btn-instagram" title="Link to our Instagram account" target="_blank" href="//instagram.com"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-default" role="navigation">
+
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html" title="Boston Outdoor Film Festival">
+                    <img src="logo.png" id="logo" alt="site logo" />
+                    <span id="logo-title">Boston Outdoor Film Festival</span>
+                </a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="active"><a href="index.html" title="Go to the front page">Home</a></li>
+                    <li><a href="news.html" title="Keep up to date with the film festival">News</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-9">
+
+                <!-- PREREGISTER REMINDER -->
+                <div id="preregister-notice" class="jumbotron text-center">
+
+                    <div class="jumbotron-contents">
+
+                        <hr />
+
+                        <div id="preregister-message">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <p>All showns are free and open to everyone.</p>
+                        <hr />
+
+                    </div>
+
+                </div>
+
+                <!-- SCHEDULE -->
+                <section>
+
+                    <header>
+                        <h3>Schedule</h3>
+                    </header>
+
+                    <div class="panel">
+
+                        <!-- SCHEDULE - TABS -->
+                        <ul class="nav nav-tabs nav-justified" id="schedule-tabs">
+
+                            <li class="active">
+                                <a href="#fifth" data-toggle="tab">5TH</a>
+                            </li>
+                            <li class="">
+                                <a href="#sixth" data-toggle="tab">6TH</a>
+                            </li>
+                            <li class="">
+                                <a href="#seventh" data-toggle="tab">7TH</a>
+                            </li>
+                            <li class="">
+                                <a href="#eigth" data-toggle="tab">8TH</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <!-- SCHEDULE - 5TH -->
+                            <div class="tab-pane fade active in" id="fifth">
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>6 PM</b></p>
+                                            <img src="assets/img/thewarroom.jpg" title="Movie Poster - The War Room">
+                                            <div class="caption text-center">
+                                                <h3>The War Room</h3>
+                                                <p>
+                                                    <button id="thewarroom" data-title="The War Room" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="pgo-qwfCFYU">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>A documentary of the Bill Clinton 1992 presidential campaign and the organization who ran it.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>8 PM</b></p>
+                                            <img src="assets/img/dune.jpg" title="Movie Poster - Dune">
+                                            <div class="caption text-center">
+                                                <h3>Dune</h3>
+                                                <p>
+                                                    <button id="dune" data-title="Dune" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="KwPTIEWTYEI">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>A Duke's son leads desert warriors against the galactic emperor and his father's evil nemesis when they assassinate his father and free their desert world from the emperor's rule.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>10 PM</b></p>
+                                            <img src="assets/img/americansplendor.jpg" title="Movie Poster - American Splendor">
+                                            <div class="caption text-center">
+                                                <h3>American Splendor</h3>
+                                                <p>
+                                                    <button id="americansplendor" data-title="American Splendor" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="APpxQm7sH5k">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>An original mix of fiction and reality illuminates the life of comic book hero everyman Harvey Pekar.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCHEDULE - 6TH -->
+                            <div class="tab-pane fade" id="sixth">
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>6 PM</b></p>
+                                            <img src="assets/img/downbylaw.jpg" title="Movie Poster - Down by Law">
+                                            <div class="caption text-center">
+                                                <h3>Down by Law</h3>
+                                                <p>
+                                                    <button id="downbylaw" data-title="Down by Law" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="4oq2bbhOOlw">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>Two innocent people are arrested. An interesting third person, with broken English, joins them in their cell. On his idea, they decide to escape from the prison. Their journey is the rest of the movie.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>8 PM</b></p>
+                                            <img src="assets/img/kellysheroes.jpg" title="Movie Poster - Kelly's Heroes'">
+                                            <div class="caption text-center">
+                                                <h3>Kelly's Heroes</h3>
+                                                <p>
+                                                    <button id="kellysheroes" data-title="Kelly's Heroes" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="Iby1Ni0VJxg">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>A group of U.S. soldiers sneaks across enemy lines to get their hands on a secret stash of Nazi treasure.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>10 PM</b></p>
+                                            <img src="assets/img/stolenspring.jpg" title="Movie Poster - Stolen Spring">
+                                            <div class="caption text-center">
+                                                <h3>Stolen Spring</h3>
+                                                <p>
+                                                    <button id="stolenspring" data-title="Stolen Spring" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="aqk0wGgI9h8">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>At their 25th high-school anniversary some bourgeois citizens remember their time in school as a happy one. In reality it was quite the contrary.<p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCHEDULE - 7TH -->
+                            <div class="tab-pane fade" id="seventh">
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>6 PM</b></p>
+                                            <img src="assets/img/threeburials.jpg" title="Movie Poster - Three Burials">
+                                            <div class="caption text-center">
+                                                <h3>Three Burials</h3>
+                                                <p>
+                                                    <button id="threeburials" data-title="Three Burials" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="mpQsgSBEaQY">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>Ranch hand Pete Perkins looks to fulfill the promise to his recently deceased best friend by burying him in his hometown in Mexico.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>8 PM</b></p>
+                                            <img src="assets/img/forcemajeure.jpg" title="Movie Poster - Force Majeure">
+                                            <div class="caption text-center">
+                                                <h3>Force majeure</h3>
+                                                <p>
+                                                    <button id="forcemajeure" data-title="Force majeure" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="fjjzVbTBF8o">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>A family vacationing in the French Alps is confronted with a devastating avalanche.<p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>10 PM</b></p>
+                                            <img src="assets/img/seenoevilhearnoevil.jpg" title="Movie Poster - See no Evil, Hear no Evil">
+                                            <div class="caption text-center">
+                                                <h3>See No Evil, Hear No Evil</h3>
+                                                <p>
+                                                    <button id="seenoevilhearnoevil" data-title="See No Evil, Hear No Evil" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="_Io8x2_whJQ">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>Dave is deaf, and Wally is blind. They witness a murder, but it was Dave who was looking at her, and Wally who was listening.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- SCHEDULE - 8TH -->
+                            <div class="tab-pane fade" id="eigth">
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>6 PM</b></p>
+                                            <img src="assets/img/enemy.jpg" title="Movie Poster - Enemy">
+                                            <div class="caption text-center">
+                                                <h3>Enemy</h3>
+                                                <p>
+                                                    <button id="enemy" data-title="Enemy" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="r98msNRZYUY">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>A man seeks out his exact look-alike after spotting him in a movie.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>8 PM</b></p>
+                                            <img src="assets/img/daywatch.jpg" title="Movie Poster - Day Watch">
+                                            <div class="caption text-center">
+                                                <h3>Day Watch</h3>
+                                                <p>
+                                                    <button id="daywatch" data-title="Day Watch" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="ZtVD97ss7rU">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>A man who serves in the war between the forces of Light and Dark comes into possession of a device that can restore life to Moscow, which was nearly destroyed by an apocalyptic event.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                            <p class="text-center"><b>10 PM</b></p>
+                                            <img src="assets/img/convoy.jpg" title="Movie Poster - Convoy">
+                                            <div class="caption text-center">
+                                                <h3>Convoy</h3>
+                                                <p>
+                                                    <button id="convoy" data-title="Convoy" class="btn btn-success watch-this">
+                                                        <i class="glyphicon glyphicon-ok"></i>
+                                                        Watch this
+                                                    </button>
+                                                    <button class="btn btn-success trailer-link" data-video-id="uDUXvR79wS4">
+                                                        <i class="glyphicon glyphicon-film"></i>
+                                                        Trailer
+                                                    </button>
+                                                </p>
+                                                <p>Truckers form a mile long "convoy" in support of a trucker's vendetta with an abusive sheriff...Based on the country song of same title by C.W. McCall.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- INFORMATION -->
+                <section>
+
+                    <header>
+
+                        <h3>Information</h3>
+
+                    </header>
+
+                    <div class="well well-lg">
+                        <h4>Pricing</h4>
+
+                        <p>All showns are free and open to everyone.</p>
+
+                        <h4>What to bring</h4>
+
+                        <p>You might want to bring a camping chair, some snacks, a warm blanket, and possible some pillows. Other things to consider are: </p>
+
+                        <ul>
+                            <li>Cocoa</li>
+                            <li>Chocolate</li>
+                            <li>Beer for the late movie</li>
+                            <li>Great friends</li>
+                            <li>Soda for the youngsters</li>
+                        </ul>
+
+                        <p>We will make sure that vendors are in place for popcorn, soda, and possible some sandwiches.</p>
+
+                        <h4>How this festival came to life</h4>
+                        <p>Like all other good things in life - while drinking wine and eating chocolate :)</p>
+                        <p>We simply thought that it would be a great idea to show some good movies for free under the open sky. We applied for a license at the City Office and got it. So here we are :)</p>
+
+                    </div>
+
+                </section>
+
+                <!-- MAP -->
+                <section>
+
+                    <header>
+
+                        <h3>Find us</h3>
+
+                    </header>
+
+                    <div class="well">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.453600493002!2d-71.07261658489678!3d42.354171443466655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3709e822b60bb%3A0xcbd77f0b5e16e701!2sBoston%20Public%20Garden!5e0!3m2!1sen!2sin!4v1571396919698!5m2!1sen!2sin"frameborder="0" style="width: 100%; height: 350px; border:0" allowfullscreen></iframe>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div id="sidebar" class="col-lg-3">
+
+                <!-- LATEST NEWS -->
+                <section>
+
+                    <header>
+                        <h4>Latest News</h4>
+                    </header>
+
+                    <div class="list-group">
+
+                        <aside class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <a href="dune.html" title="News - Epic science fiction film added">Epic science fiction film added</a>
+                            </h4>
+                            <div class="list-group-item-text">
+                                <time class="text-muted">2019-18-10 - 17:55 PM</time>
+                                <img src="assets/img/dunenews.jpg" class="img-thumbnail img-news-thumbnail" alt="News story image" />
+                                <p>Dune is a 1984 American epic science fiction film written and directed by David Lynch, based on the 1965 Frank Herbert novel of the same name...</p>
+                                <p><a href="dune.html" title="News - Epic science fiction film added">Read more</a></p>
+                            </div>
+                        </aside>
+
+                        <aside class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <a href="thewarroom.html" title="News - The War Room - Behind the movie">The War Room - Behind the movie</a>
+                            </h4>
+                            <div class="list-group-item-text">
+                                <time class="text-muted">2019-19-10 - 20:45 PM</time>
+                                <img src="assets/img/thewarroomnews.jpg" class="img-thumbnail img-news-thumbnail" alt="News story image" />
+                                <p>War Room is a 2015 American Christian drama film directed by Alex Kendrick and co-written and produced by Stephen Kendrick...</p>
+                                <p><a href="thewarroom.html" title="News - The War Room - Behind the movie">Read more</a></p>
+                            </div>
+                        </aside>
+
+                        <aside class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <a href="americansplendor.html" title="News - American Splendor - Explained">American Splendor - Explained</a>
+                            </h4>
+                            <div class="list-group-item-text">
+                                <time class="text-muted">2019-21-10 - 15:55 PM</time>
+                                <img src="assets/img/americanspelendornews.jpg" class="img-thumbnail img-news-thumbnail" alt="News story image" />
+                                <p>American Splendor is a 2003 American biographical comedy-drama film about Harvey Pekar, the author of the American Splendor comic book series...</p>
+                                <p><a href="americansplendor.html" title="News - American Splendor - Explained">Read more</a></p>
+                            </div>
+                        </aside>
+
+                    </div>
+
+                    <div class="text-right">
+                        <a href="news.html" title="Keep up to date with the film festival">Read more news</a>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-4 footer-section">
+                    <h4>USEFULL LINKS</h4>
+                    <ul class="list-inline list-unstyled some-links">
+                        <li><a class="btn btn-default btn-twitter" title="Link to our Twitter account" target="_blank" href="//twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="btn btn-default btn-facebook" title="Link to our Facebook page" target="_blank" href="//facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="btn btn-default btn-instagram" title="Link to our Instagram account" target="_blank" href="//instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><a href="news.html" title="Keep up to date with the film festival">News</a></li>
+                        <li><a href="https://www.boston.gov/" target="_blank" title="Go to the website for the city of Boston">Website for the city of Boston</a></li>
+                        <li><a href="https://www.boston.gov/parks/public-garden" target="_blank" title="Go to the website for the Boston Public Garden">Website for the Boston Public Garden</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 footer-section">
+                    <h4>PRACTICAL INFO</h4>
+                    <ul class="list-unstyled">
+                        <li><address>Boston Public Garden</address></li>
+                        <li>August 5th through 8th</li>
+                        <li>From 6pm to midnight</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 footer-section">
+                    <h4>Boston Outdoor Film Festival</h4>
+                    <p>You might want to bring a camping chair, some snacks, a warm blanket, and possible some pillows.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Modal for registering -->
+    <div id="register-modal" class="modal fade" role="dialog">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <form id="register-form" class="form">
+
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Great Choice!</h4>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <p>We love <b><span id="register-modal-movie-title"></span></b> too!</p>
+
+                        <p>Please sign up for this movie (and as many others as you would like) by using you Google or Facebook account</p>
+
+                        <div class="row">
+
+                            <div class="form-group col-md-6">
+
+                                <button type="button" class="btn btn-info full-width"><i class="fa fa-google fa-text"></i>Google</button>
+
+                            </div>
+
+                            <div class="form-group col-md-6">
+
+                                <button type="button" class="btn btn-info full-width"><i class="fa fa-facebook fa-text"></i>Facebook</button>
+
+                            </div>
+
+                        </div>
+
+                        <p>Want to use your e-mail address and a password instead? No problem - enter them below.</p>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+
+                                    <label class="control-label">E-mail *</label>
+                                    <input type="email" class="form-control" id="register-user-email" required />
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label class="control-label">Password *</label>
+                                <input type="password" class="form-control" id="register-user-password" required />
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="row">
+
+                            <div class="col-sm-12">
+
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="email-updates" />
+                                        <label class="control-label" for="email-updates">
+                                            Send me a mail if schedule changes affect the movies I have registered for.
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <input type="hidden" id="register-movie-title" />
+                        <input type="hidden" id="register-movie-id" />
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-info">Register</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal for trailer -->
+    <div id="trailer-modal" class="modal fade" role="dialog">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Trailer</h4>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+
+                        <div id="player"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery and Bootstrap -->
+    <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/bootflat/js/icheck.min.js"></script>
+
+    <script type="text/javascript">
+
+        // Youtube player code for trailers
+        // Create and append script tag
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // Create player
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: 'KwPTIEWTYEI',
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) { }
+
+
+        $(document).ready(function () {
+
+            var preregisterMessage = $('#preregister-message');
+            var preregisterMessageHeader = $('#preregister-message h3');
+            var preregisterMessageSubHeader = $('#preregister-message p');
+            var preregisterMessageWatchList = $('<ul class="list-inline"></ul>');
+
+            var userEmail = localStorage.getItem('userEmail');
+            var watchList = {};
+
+            // Restore watchList from local storage
+            if (userEmail !== null) {
+
+                var storedWatchList = localStorage.getItem('watchList');
+
+                if (storedWatchList !== null && storedWatchList !== '') {
+
+                    try {
+
+                        watchList = JSON.parse(storedWatchList);
+
+                    } catch (e) {
+
+                        console.log('Error: ', e.message);
+
+                    }
+                }
+
+            }
+
+            // Set preregister message content
+            updatePreregisterMessage();
+
+            // Handle when user preregisters for a movie
+            $('.watch-this').on('click', function (event) {
+
+                var movieTitle = $(this).attr('data-title');
+                var movieId = $(this).attr('id');
+
+                // User is not registered
+                if (userEmail === null) {
+
+                    // Set title and hidden inputs on register modal form
+                    $('#register-modal-movie-title').html(movieTitle);
+                    $('#register-movie-title').val(movieTitle);
+                    $('#register-movie-id').val(movieId);
+
+                    $('#register-modal').modal('show');
+
+                } else {
+
+                    toggleOnWatchList(movieId, movieTitle);
+
+                }
+
+            });
+
+            // Handle when user preregisters for the first movie
+            $('#register-form').on('submit', function (e) {
+
+                e.preventDefault();
+
+                var movieTitle = $('#register-movie-title').val();
+                var movieId = $('#register-movie-id').val();
+                userEmail = $('#register-user-email').val();
+
+                localStorage.setItem('userEmail', userEmail);
+
+                addToWatchList(movieTitle, movieId);
+
+                $('#register-modal').modal('hide');
+
+            });
+
+            // --------------------------------------------------------
+            // Helper functions to handle updating the user's watchList
+            // --------------------------------------------------------
+            // Toggle whether a movieId is on the watchList
+            function toggleOnWatchList(movieId, movieTitle) {
+
+                if (watchList[movieId]) {
+
+                    removeFromWatchList(movieId);
+
+                } else {
+
+                    addToWatchList(movieTitle, movieId);
+
+                }
+            }
+            // Add movieId to watchList
+            function addToWatchList(movieTitle, movieId) {
+
+                $('#' + movieId).addClass('watch');
+                watchList[movieId] = movieTitle;
+
+                storeWatchList();
+
+            }
+            // Remove movieId from watchList
+            function removeFromWatchList(movieId) {
+
+                $('#' + movieId).removeClass('watch');
+                delete watchList[movieId];
+
+                storeWatchList();
+
+            }
+            // Store watchList in localStorage
+            function storeWatchList() {
+
+                localStorage.setItem('watchList', JSON.stringify(watchList));
+                updatePreregisterMessage();
+
+            }
+            // Update message in preregister notice so that it reflects whether any movies has been selected
+            function updatePreregisterMessage() {
+
+                if (Object.keys(watchList).length > 0) {
+
+                    preregisterMessageHeader.html('Great choices!');
+                    preregisterMessageSubHeader.html('You have put the following movies on your watch list.');
+                    preregisterMessage.append(preregisterMessageWatchList);
+
+                } else {
+
+                    preregisterMessageHeader.html('Pick your movies!');
+                    preregisterMessageSubHeader.html('Let us know which movies you will attend by clicking "Watch this" in the schedule.');
+
+                }
+
+                updatePreregisterWatchList();
+            }
+            // Update the list of movies selected by the user in the preregister notice
+            function updatePreregisterWatchList() {
+
+                preregisterMessageWatchList.html('');
+
+                Object.keys(watchList).map(function (movieId) {
+
+                    var listItem = $('<li class=""></li>');
+                    var removeButton = $('<a class="pull-right" href="#" title="Remove from my watch list"><i class="glyphicon glyphicon-remove"></i></a>');
+                    listItem.attr('id', 'movie' + movieId);
+                    listItem.append(watchList[movieId]);
+                    listItem.append(removeButton);
+                    preregisterMessageWatchList.append(listItem);
+
+                    $('#' + movieId).addClass('watch');
+
+                    removeButton.on('click', function (e) {
+
+                        e.preventDefault();
+                        removeFromWatchList(movieId);
+
+                    });
+
+                });
+
+            }
+
+            // Handle when user chooses a trailer
+            $('.trailer-link').on('click', function () {
+
+                var videoId = $(this).attr('data-video-id');
+                player.loadVideoById(videoId, 0, "large")
+
+                $('#trailer-modal').modal('show');
+
+            });
+
+            // Handle when user closes trailer modal without stopping the video
+            $('#trailer-modal').on('hide.bs.modal', function () {
+
+                player.stopVideo();
+
+            });
+
+            // Init tabs for schedule
+            $('#schedule-tabs a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            $('input').iCheck({
+                checkboxClass: "icheckbox_flat",
+                increaseArea: "20%"
+            });
+
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,543 @@
+/* ------------------------------------------------------------------------
+    INFORMATION
+
+    Colors:
+    orange:         E64A19
+    darker orange:  BF360C
+    cyan:           00838F
+    darker cyan:    006064
+    grey:           999
+    very light grey e7ecf2
+
+------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------
+    GENERAL STYLES
+------------------------------------------------------------------------ */
+
+body {
+    background-color: #ECEFF1;
+}
+
+/* Movie Poster and titles loves all caps. Let's match that */
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+}
+
+/* Bring any sub headers closer to the header */
+.sub-header {
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #00838F;
+}
+
+a:hover, a:active, a:focus {
+    color: #006064;
+}
+
+/* Easy to use seperator */
+hr.dashed {
+    border-color: #999;
+    border-style: dashed;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------
+    BANNER
+------------------------------------------------------------------------ */
+#banner-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: 0;
+}
+
+/* A dark overlay will make the white header stand out and be more readable */
+#banner-container .banner .banner-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* flex used to easily centering the image when it overflows */
+#banner-container .banner .banner-background {
+    display: flex;
+    justify-content: center;
+}
+
+#banner-container .banner-small .banner-background {
+    height: 75px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#banner-container .banner .banner-background img {
+    width: auto;
+    height: 275px;
+}
+
+/* flex used to easily vertical align the text */ 
+#banner-container .banner .banner-text-container {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#banner-container .banner .banner-text h1 {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#banner-container .banner .banner-text h4 {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+
+/* ------------------------------------------------------------------------
+    HEAD NAV
+------------------------------------------------------------------------ */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: top;
+    height: 55px;
+    margin-right: 5px;
+    padding: 5px;
+    padding-right: 15px;
+    border: 1px solid #fff;
+    border-right: none;
+}
+
+#logo-title {
+    display: inline-block;
+    width: 160px;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: -15px;
+    padding: 0 5px;
+    border: 1px solid #fff;
+    border-left: none;
+    background-color: #fff;
+    color: #222;
+}
+
+/* ------------------------------------------------------------------------
+    PREREGISTER REMINDER
+------------------------------------------------------------------------ */
+#preregister-notice {
+    /* Align top with first header in sidebar*/
+    margin-top: 20px;
+    padding: 0 20px;
+    border: 1px dashed #fff;
+}
+
+/* ------------------------------------------------------------------------
+    NEWS
+------------------------------------------------------------------------ */
+.list-group-item-heading,
+.well header h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.list-group-item time,
+.well time {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.well header h4 {
+    margin: 0;
+}
+
+.list-group-item {
+    overflow: hidden;
+}
+
+.img-news-thumbnail {
+    width: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+article img.img-thumbnail.pull-right { 
+    width: 200px; /* let's use a default size for article images in this prototype - this will be editable via CMS in later version */
+    margin: 0 0 15px 15px;
+}
+
+/* ------------------------------------------------------------------------
+    SCHEDULE
+------------------------------------------------------------------------ */
+.panel .thumbnail {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.panel .thumbnail img {
+    width: 100%;
+}
+
+.panel .watch-this .glyphicon {
+    display: none;
+}
+
+.panel .watch-this.watch .glyphicon {
+    display: inline-block;
+}
+
+/* ------------------------------------------------------------------------
+    FOOTER
+------------------------------------------------------------------------ */
+.footer {
+    margin-top: 60px;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+.footer .footer-section {
+    margin-bottom: 50px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------
+    SOME
+------------------------------------------------------------------------ */
+#some-links {
+    position: relative;
+}
+
+#some-links ul {
+    margin-bottom: 0px;
+}
+
+#some-links-sidebar {
+    margin-top: 20px;
+}
+
+a.btn-facebook,
+a.btn-facebook:hover,
+a.btn-facebook:focus {
+    color: #3b5998;
+}
+a.btn-twitter,
+a.btn-twitter:hover,
+a.btn-twitter:focus {
+    color: #4099FF;
+}
+a.btn-instagram,
+a.btn-instagram:hover,
+a.btn-instagram:focus {
+    color: #8a3ab9;
+}
+
+
+
+/* ------------------------------------------------------------------------
+    BOOTFLAT OVERRIDES
+------------------------------------------------------------------------ */
+.navbar-default {
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form  {
+    background-color: #fff;
+    border-color: #ededed;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    text-transform: uppercase;
+    float: none;
+    min-height: 50px;
+    display: inline-block;
+    height: auto;
+    padding: 10px 0 10px 15px;
+}
+
+.navbar-default .navbar-nav {
+    margin: 0 -15px;
+}
+
+.navbar-default .nav > li > a, 
+.navbar-default .navbar-nav > .active > a {
+    position: relative;
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #ededed;
+    color: #333;
+}
+
+.navbar-default .navbar-toggle {
+    margin-top: 18px;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+}
+
+.page-header {
+    margin-top: 20px;
+}
+
+.btn-info,
+.btn-info.active,
+.btn-info.disabled, 
+.btn-info:active,
+.btn-info[disabled] {
+    background-color: #E64A19;
+    border-color: #E64A19;
+}
+
+.btn-info:focus,
+.btn-info:hover, 
+.open .dropdown-toggle.btn-info {
+    background-color: #BF360C;
+    border-color: #BF360C;
+}
+
+.btn-success,
+.btn-success.active,
+.btn-success.disabled, 
+.btn-success:active,
+.btn-success[disabled] {
+    background-color: #00838F;
+    border-color: #00838F;
+}
+
+.btn-success:focus,
+.btn-success:hover, 
+.open .dropdown-toggle.btn-success {
+    background-color: #006064;
+    border-color: #006064;
+}
+
+.watch-this.btn-success,
+.watch-this.btn-success.active,
+.watch-this.btn-success.disabled, 
+.watch-this.btn-success:active,
+.watch-this.btn-success[disabled] {
+    background-color: #E64A19;
+    border-color: #E64A19;
+}
+
+.watch-this .btn-success:focus,
+.watch-this .btn-success:hover, 
+.watch-this .open .dropdown-toggle.btn-success {
+    background-color: #BF360C;
+    border-color: #BF360C;
+}
+
+.btn .glyphicon,
+.btn .fa-text {
+    margin-right: 5px;
+}
+
+.jumbotron {
+    background: #E64A19;
+}
+
+.jumbotron .jumbotron-contents {
+    color: #fff;
+}
+
+.jumbotron-contents h3  {
+    margin-bottom: 30px;
+}
+
+.jumbotron-contents hr {
+    border: none;
+    border-bottom: 1px dashed #fff;
+}
+
+.jumbotron-contents p {
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.jumbotron-contents .list-inline li {
+    background: #fff;
+    padding: 7px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.jumbotron-contents .list-inline li a {
+    padding: 1px;
+    margin-left: 10px;
+    color: #E64A19;
+}
+
+.jumbotron-contents .list-inline li a:hover {
+    color: #BF360C;
+}
+
+.breadcrumb {
+    margin: 20px 0 30px 0;
+    position: relative;
+    z-index: 5;
+}
+
+.breadcrumb-arrow li a {
+    background-color: #00838F;
+    border: 1px solid #00838F;
+}
+
+.breadcrumb-arrow li a:before {
+    border-left-color: #00838F;
+}
+
+.breadcrumb-arrow li a:after {
+    border-left: 11px solid #006064;
+}
+
+.breadcrumb-arrow li a:hover,
+.breadcrumb-arrow li a:active,
+.breadcrumb-arrow li a:focus {
+    background-color: #006064;
+    border: 1px solid #006064;
+}
+
+.breadcrumb-arrow li a:hover:before,
+.breadcrumb-arrow li a:active:before,
+.breadcrumb-arrow li a:focus:before {
+    border-left-color: #006064;
+}
+
+.breadcrumb-arrow li a:hover:after,
+.breadcrumb-arrow li a:active:after,
+.breadcrumb-arrow li a:focus:after {
+    border-left: 11px solid #006064;
+}
+
+article {
+    overflow: hidden;
+}
+
+.checkbox {
+    margin-top: 10px;
+}
+
+.checkbox label {
+    padding-left: 0;
+}
+
+/* ------------------------------------------------------------------------
+    MEDIA
+------------------------------------------------------------------------ */
+@media (min-width: 768px) {
+    #banner-container .banner .banner-background img {
+        height: 475px;
+    }
+    #banner-container .banner .banner-text h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    #banner-container .banner .banner-text h4 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .navbar-default .navbar-collapse, 
+    .navbar-default .navbar-form  {
+        margin-top: 16px;
+        background-color: transparent;
+    }
+    .navbar-default .nav > li > a {
+        border-bottom: none;
+        padding: 10px 15px;
+        color: #fff;
+    }
+    .navbar-default .navbar-nav > .active > a {
+        border-top: 1px solid;
+        color: #fff;
+        padding: 10px 15px;
+    }
+    #logo-title {
+        width: auto;
+        padding: 10px;
+        font-size: 18px;
+    }
+    #some-links {
+        margin-top: -70px;
+    }
+    #some-links ul {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    #logo-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #banner-container .banner .banner-background img {
+        width: 100%;
+    }
+    #banner-container .banner .banner-text h1 {
+    }
+    #banner-container .banner .banner-text h4 {
+    }
+    .list-group-item .img-news-thumbnail {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
